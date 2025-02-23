@@ -7,7 +7,6 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'class', 
   theme: {
     extend: {
       screens: {
@@ -36,7 +35,17 @@ export default {
         textDark: '#8892b0',
         textGreen: '#64FFDA',
         hoverColor: 'rgba(100, 255, 218, 0.1)',
-    }
+    },
+    keyframes: {
+      gradient: {
+        '0%': { backgroundPosition: '0% 50%' },
+        '50%': { backgroundPosition: '100% 50%' },
+        '100%': { backgroundPosition: '0% 50%' },
+      }
+    },
+    animation: {
+      gradient: 'gradient 6s ease infinite',
+    },
   },
 },
   plugins: [],

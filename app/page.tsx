@@ -19,7 +19,7 @@ const montserrat = Montserrat({
 export default function Page() {
   return (
     <div>
-    <main className={`${montserrat.variable} font-montserrat w-full h-screen bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll`}>
+    <main className={`${montserrat.variable} font-montserrat w-full h-screen text-textLight overflow-x-hidden overflow-y-scroll`}>
       <Navbar />
       <div className="w-full h-screen xl:flex items-center gap-20 justify-between">
         <div className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0">
